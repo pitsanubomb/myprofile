@@ -7,6 +7,81 @@
         href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
         integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK"
         crossorigin="anonymous">
+    <style>
+        @-webkit-keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0)
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0)
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+        }
+
+        @-webkit-keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(100, 0%, 0);
+                transform: translate3d(100, 0%, 0)
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(100%, 0%, 0);
+                transform: translate3d(100%, 0, 0)
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+        }
+
+        .move {
+            animation: fadeInUp;
+            -webkit-animation: fadeInUp;
+            animation-duration: 2s;
+        }
+
+        .move-h-1 {
+            animation: fadeInLeft;
+            -webkit-animation: fadeInLeft;
+            animation-duration: 2s;
+        }
+
+        .move-t-2 {
+            animation: fadeInLeft;
+            -webkit-animation: fadeInLeft;
+            animation-duration: 5s;
+        }
+    </style>
 
 </head>
 
@@ -24,15 +99,15 @@
                     class="img-fluid">
             </div>
             <div class="p-1 flex-fill bd-highlight">
-                <h1>Cgloveut</h1>
-                <p class="lead">This is myprofile about my history and work
+                <h1 class="move-h-1">Cgloveut</h1>
+                <p class="move-t-2 lead">This is myprofile about my history and work
                 </p>
             </div>
         </div>
 
         <div class="my-3 p-3 bg-white rounded shadow-sm">
-            <h6 class="border-bottom pb-2 mb-0">Work</h6>
-            <div class="d-flex text-muted pt-3">
+            <h6 class="move border-bottom pb-2 mb-0">Work</h6>
+            <div class="move d-flex text-muted pt-3">
                 <p class="pb-3 pl-2 mb-0 small lh-sm border-bottom">
                     <strong class="d-block text-gray-dark">Moutain studio</strong>
                     Meeting with the clients to discuss the project requirements
@@ -41,8 +116,7 @@
                     PHP and Javascript
                 </p>
             </div>
-            <div class="d-flex text-muted pt-3">
-
+            <div class="move d-flex text-muted pt-3">
                 <p class="pb-3 mb-0 small lh-sm border-bottom">
                     <strong class="d-block text-gray-dark">Freelance</strong>
                     Meeting with the clients to discuss the project requirements
@@ -53,7 +127,7 @@
                     Develop frontend by use angular and typescript
                 </p>
             </div>
-            <div class="d-flex text-muted pt-3">
+            <div class="move d-flex text-muted pt-3">
                 <p class="pb-3 pl-2 mb-0 small lh-sm border-bottom">
                     <strong class="d-block text-gray-dark">AIS (Outsource)</strong>
                     Make web to support technology team and support team
@@ -66,7 +140,7 @@
                     Unit test
                 </p>
             </div>
-            <div class="d-flex text-muted pt-3">
+            <div class="move d-flex text-muted pt-3">
                 <p class="pb-3 pl-2 mb-0 small lh-sm border-bottom">
                     <strong class="d-block text-gray-dark">P-soft</strong>
                     Setting all website project with docker , server deliverables
